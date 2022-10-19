@@ -3,9 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.router = void 0;
 const express_1 = __importDefault(require("express"));
-const env_js_1 = require("./env.js");
-const router_js_1 = require("./routes/router.js");
-const app = (0, express_1.default)();
-app.use("/", router_js_1.router);
-app.listen(env_js_1.PORT, () => { console.log(`El puerto en esccucha es el ${env_js_1.PORT}`); });
+const handle_js_1 = require("../handlers/handle.js");
+const router = express_1.default.Router();
+exports.router = router;
+router.get("/hola", handle_js_1.Handler.salute);
