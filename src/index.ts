@@ -1,10 +1,15 @@
 import express from "express";
 import {PORT} from "./env.js";
 import {router} from "./routes/router.js"
+import path from "path";
 
 const app=express();
+const staticPath= path.join(__dirname, "..", "public");
+console.log(staticPath);
 
-app.use("/", router)
+app.use(express.static(staticPath));
+
+app.use("/", router);
 
 
 
