@@ -1,5 +1,5 @@
 import express from "express";
-import {PORT} from "./env.js";
+import {PORT} from "./config.js";
 import {router} from "./routes/router.js"
 import path from "path";
 

@@ -1,11 +1,11 @@
 import express from "express";
-import { Handler } from "../handlers/handle.js";
-import { FormHandler } from "../handlers/formHandler.js";
+
+import { FormularioProcesado } from "../handlers/procesarFormulario.js";
 
 const router=express.Router();
 
-router.get("/hola", Handler.salute)
-router.post("/contactForm", FormHandler.returnEmail)
+
+router.post("/contactForm", FormularioProcesado.respuestaFormulario)
 
 
 
