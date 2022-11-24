@@ -4,6 +4,7 @@ import {router} from "./routes/router.js"
 import path from "path";
 
 const app=express();
+app.set("view engine", "ejs");
 const staticPath= path.join(__dirname, "..", "public");
 console.log(staticPath);
 

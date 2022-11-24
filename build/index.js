@@ -8,6 +8,7 @@ const config_js_1 = require("./config.js");
 const router_js_1 = require("./routes/router.js");
 const path_1 = __importDefault(require("path"));
 const app = (0, express_1.default)();
+app.set("view engine", "ejs");
 const staticPath = path_1.default.join(__dirname, "..", "public");
 console.log(staticPath);
 app.use(express_1.default.static(staticPath));
