@@ -6,7 +6,7 @@ import path from "path";
 const app=express();
 app.set("view engine", "ejs");
 const staticPath= path.join(__dirname, "..", "public");
-console.log(staticPath);
+
 
 app.use(express.static(staticPath));
 

@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.indexapp = void 0;
-function indexapp() {
+exports.indexappTonyLydia = void 0;
+function indexappTonyLydia(req, res) {
+    res.render("pages/ranking");
 }
-exports.indexapp = indexapp;
+exports.indexappTonyLydia = indexappTonyLydia;
