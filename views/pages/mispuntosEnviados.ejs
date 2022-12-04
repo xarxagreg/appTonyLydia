@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
   <link rel="stylesheet" href="style/stylePointsWhitSending.css">
+  <link rel="stylesheet" href="style/styleranking.css">
   <title>Mis puntos</title>
 </head>
 
 <body>
   <div id="menu">
     <div class="menuFoot">
-      <a href="mispuntosEnviados.html"><img src="public/iconosMenu/mis-puntos-red.svg" alt="points"></a>
+      <a href="mispuntosEnviados.ejs"><img src="publicAppTony/iconosMenu/mis-puntos-red.svg" alt="points"></a>
       <p class="red">Mis puntos</p>
     </div>
     <div class="menuFoot">
-      <a href="ranking.html"><img src="public/iconosMenu/ranking-gray.svg" alt="ranking"></a>
+      <a href="ranking.ejs"><img src="publicAppTony/iconosMenu/ranking-gray.svg" alt="ranking"></a>
       <p>Ranking</p>
     </div>
     <div class="menuFoot">
-      <a href="#"><img src="public/iconosMenu/mi-perfil-gray.svg" alt="perfil"></a>
+      <a href="#"><img src="publicAppTony/iconosMenu/mi-perfil-gray.svg" alt="perfil"></a>
       <p>Mi perfil</p>
     </div>
     <div class="menuFoot">
@@ -34,7 +35,7 @@
     <div id="divPiechart">
       <div class="color">
         <div class="piechart1">
-          <div id="numberpie1">350</div>
+          <div id="numberpie1"><%=student.activa_points_balance%></div>
         </div>
         <p class="pieText">DISPONIBLES<br> ¡Listos para enviar!</p>
       </div>
