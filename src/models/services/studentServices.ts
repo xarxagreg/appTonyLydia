@@ -1,3 +1,5 @@
+
+import express from "express";
 import {Student} from "../types/student.js";
 import {db} from "../../config.js";
 import {OkPacket, RowDataPacket} from "mysql2";

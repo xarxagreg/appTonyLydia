@@ -11,7 +11,6 @@ const db = mysql2_1.default.createConnection({
     host: "localhost",
     user: "root",
     password: "urbanita22",
-    //database: "xa_char_sheet"
-    database: "bdtonylydia"
+    database: "xa_char_sheet"
 });
 exports.db = db;

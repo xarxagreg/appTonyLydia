@@ -5,7 +5,7 @@ import path from "path";
 
 const app=express();
 app.set("view engine", "ejs");
-const staticPath= path.join(__dirname, "..", "public");
+const staticPath= path.join(__dirname, "..", "public/publicAppTony");
 
 
 app.use(express.static(staticPath));

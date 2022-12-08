@@ -5,12 +5,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.router = void 0;
 const express_1 = __importDefault(require("express"));
+const logUser_js_1 = require("../handlers/log/logUser.js");
+const getOneUser_js_1 = require("../handlers/user/getOneUser.js");
 const indexapp_js_1 = require("../handlers/indexapp.js");
-const listRankingStudents_js_1 = require("../handlers/listRankingStudents.js");
-const getOneStudent_js_1 = require("../handlers/getOneStudent.js");
 const router = express_1.default.Router();
 exports.router = router;
-router.get("/rankstudents", listRankingStudents_js_1.rankingStudents);
-//router.post("/puntos",enviarPuntos);
-router.get("/students/:id_student", getOneStudent_js_1.getOneStudent);
 router.get("/ranking", indexapp_js_1.indexappTonyLydia);
+router.post("/logUser", logUser_js_1.userValidation);
+router.get("/users/:user_email", getOneUser_js_1.getOneUser);
